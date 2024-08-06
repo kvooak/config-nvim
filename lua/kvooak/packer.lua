@@ -48,6 +48,5 @@ return require('packer').startup(function(use)
     }
   }
 
-  use('OmniSharp/omnisharp-vim')
-
 end)
+
