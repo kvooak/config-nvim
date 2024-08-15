@@ -12,11 +12,29 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
+  -- use({
+  --   'rose-pine/neovim',
+  --   as = 'rose-pine',
+  --   config = function()
+  --     vim.cmd('colorscheme rose-pine')
+  --   end
+  -- })
+
   use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
+    'maxmx03/fluoromachine.nvim',
+    as = 'fluoromachine',
+    lazy = false,
     config = function()
-      vim.cmd('colorscheme rose-pine')
+      local fm = require 'fluoromachine'
+
+      fm.setup {
+        glow = true,
+        -- theme = 'delta',
+        -- theme = 'retrowave',
+        transparent = true,
+      }
+
+      vim.cmd('colorscheme fluoromachine')
     end
   })
 
@@ -37,6 +55,7 @@ return require('packer').startup(function(use)
     end
   })
   use('windwp/nvim-ts-autotag')
+  use('norcalli/nvim-colorizer.lua')
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
