@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/kvooak/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?.lua;/home/kvooak/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?/init.lua;/home/kvooak/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?.lua;/home/kvooak/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/kvooak/.cache/nvim/packer_hererocks/2.1.1720049189/lib/lua/5.1/?.so"
+local package_path_str = "/home/kvooak/.cache/nvim/packer_hererocks/2.1.1725453128/share/lua/5.1/?.lua;/home/kvooak/.cache/nvim/packer_hererocks/2.1.1725453128/share/lua/5.1/?/init.lua;/home/kvooak/.cache/nvim/packer_hererocks/2.1.1725453128/lib/luarocks/rocks-5.1/?.lua;/home/kvooak/.cache/nvim/packer_hererocks/2.1.1725453128/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/kvooak/.cache/nvim/packer_hererocks/2.1.1725453128/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -100,7 +100,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   fluoromachine = {
-    config = { "\27LJ\2\n‡\1\0\0\4\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0B\1\2\0016\1\4\0009\1\5\1'\3\6\0B\1\2\1K\0\1\0\30colorscheme fluoromachine\bcmd\bvim\1\0\2\16transparent\2\tglow\2\nsetup\18fluoromachine\frequire\0" },
+    config = { "\27LJ\2\n—\1\0\0\4\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0B\1\2\0016\1\4\0009\1\5\1'\3\6\0B\1\2\1K\0\1\0\30colorscheme fluoromachine\bcmd\bvim\1\0\3\ntheme\14retrowave\tglow\2\16transparent\2\nsetup\18fluoromachine\frequire\0" },
     loaded = true,
     path = "/home/kvooak/.local/share/nvim/site/pack/packer/start/fluoromachine",
     url = "https://github.com/maxmx03/fluoromachine.nvim"
@@ -208,7 +208,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: fluoromachine
 time([[Config for fluoromachine]], true)
-try_loadstring("\27LJ\2\n‡\1\0\0\4\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0B\1\2\0016\1\4\0009\1\5\1'\3\6\0B\1\2\1K\0\1\0\30colorscheme fluoromachine\bcmd\bvim\1\0\2\16transparent\2\tglow\2\nsetup\18fluoromachine\frequire\0", "config", "fluoromachine")
+try_loadstring("\27LJ\2\n—\1\0\0\4\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0B\1\2\0016\1\4\0009\1\5\1'\3\6\0B\1\2\1K\0\1\0\30colorscheme fluoromachine\bcmd\bvim\1\0\3\ntheme\14retrowave\tglow\2\16transparent\2\nsetup\18fluoromachine\frequire\0", "config", "fluoromachine")
 time([[Config for fluoromachine]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
