@@ -41,6 +41,6 @@ vim.keymap.set(
   "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
 )
 
-vim.keymap.set("n", "<leader><leader>", function()
-  vim.cmd("w")
-end)
+-- vim.keymap.set("n", "<leader><leader>", function()
+--   vim.cmd("w")
+-- end)
